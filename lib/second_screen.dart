@@ -9,13 +9,15 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          children: [
-            Text(Get.find<ThirdScreenController>().test),
-            ElevatedButton(onPressed: () {
-              Get.toNamed('/third');
-            }, child: Text('Go to third screen')),
-          ],
+        child: Center(
+          child: Column(
+            children: [
+              Text(Get.find<SecondScreenController>().test),
+              ElevatedButton(onPressed: () {
+                Get.toNamed('/third');
+              }, child: Text('Go to third screen')),
+            ],
+          ),
         ),
       ),
     );

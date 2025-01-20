@@ -9,7 +9,7 @@ class ThirdScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(Get.find<ThirdScreenController>().test),
+        child: Text(Get.find<SecondScreenController>().test),
       ),
     );
   }

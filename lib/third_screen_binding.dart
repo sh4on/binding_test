@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:get_page_test/second_screen_controller.dart';
+import 'package:get_page_test/third_screen_controller.dart';
 import 'package:get_page_test/third_screen_controller2.dart';
 
 class ThirdScreenBinding extends Bindings {

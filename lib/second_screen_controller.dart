@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ThirdScreenController extends GetxController {
+class SecondScreenController extends GetxController {
   String test;
 
-  ThirdScreenController({required this.test});
+  SecondScreenController({required this.test});
 }
