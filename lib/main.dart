@@ -5,6 +5,8 @@ import 'package:get_page_test/second_screen_binding.dart';
 import 'package:get_page_test/third_screen.dart';
 import 'package:get_page_test/third_screen_binding.dart';
 
+import 'main_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: '/',
-          page: () => MyHomePage(),
+          page: () => MainScreen(),
         ),
         GetPage(
           name: '/second',
@@ -41,18 +43,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Get.toNamed('/second');
-          },
-          child: Text('Go to second screen'),
-        ),
-      ),
-    );
-  }
-}
+
